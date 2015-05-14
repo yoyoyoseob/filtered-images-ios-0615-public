@@ -7,7 +7,7 @@
 //
 
 #import "FISViewController.h"
-#import <UIImage+Filters.h>
+#import "UIImage+Filters.h"
 
 @interface FISViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -33,7 +33,7 @@
 - (IBAction)vignetterTapped:(id)sender {
 
     UIImage *nonFiltered = [UIImage imageNamed:@"Mickey.jpg"];
-    UIImage *filtered = [nonFiltered imageWithFilter:UIImageFilterTypeColorInvert];
+    UIImage *filtered = [nonFiltered imageWithFilter:UIImageFilterTypeVignette];
     self.imageView.image = filtered;
 }
 @end
