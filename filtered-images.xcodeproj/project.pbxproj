@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		317B53CF1ADEF73800E82B6E /* UIImage+Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = 317B53CE1ADEF73800E82B6E /* UIImage+Filters.m */; };
+		7172A4ED1B59409F0026E4B7 /* FISApplyFilterOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7172A4EC1B59409F0026E4B7 /* FISApplyFilterOperation.m */; };
 		D833EF88197FE7CE00E99358 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D833EF87197FE7CE00E99358 /* Foundation.framework */; };
 		D833EF8A197FE7CE00E99358 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D833EF89197FE7CE00E99358 /* CoreGraphics.framework */; };
 		D833EF8C197FE7CE00E99358 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D833EF8B197FE7CE00E99358 /* UIKit.framework */; };
@@ -23,6 +24,7 @@
 		D833EFB1197FE7CE00E99358 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D833EFAF197FE7CE00E99358 /* InfoPlist.strings */; };
 		D833EFB3197FE7CE00E99358 /* filtered_imagesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D833EFB2197FE7CE00E99358 /* filtered_imagesTests.m */; };
 		D833EFBD197FE82800E99358 /* Mickey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D833EFBC197FE82800E99358 /* Mickey.jpg */; };
+		F1F506DBF7DADBF9417493D1 /* libPods-filtered-images.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1AF0F5CCCB6ABD87191B38 /* libPods-filtered-images.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		317B53CD1ADEF73800E82B6E /* UIImage+Filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Filters.h"; sourceTree = "<group>"; };
 		317B53CE1ADEF73800E82B6E /* UIImage+Filters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Filters.m"; sourceTree = "<group>"; };
 		3ACCD107016F40028AF55B27 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7172A4EB1B59409F0026E4B7 /* FISApplyFilterOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISApplyFilterOperation.h; sourceTree = "<group>"; };
+		7172A4EC1B59409F0026E4B7 /* FISApplyFilterOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISApplyFilterOperation.m; sourceTree = "<group>"; };
 		85C8E26AD7B0BA2DBAA13C74 /* Pods-filtered-images.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-filtered-images.debug.xcconfig"; path = "Pods/Target Support Files/Pods-filtered-images/Pods-filtered-images.debug.xcconfig"; sourceTree = "<group>"; };
 		A61693FE01227EC60A80AC20 /* Pods-filtered-images.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-filtered-images.release.xcconfig"; path = "Pods/Target Support Files/Pods-filtered-images/Pods-filtered-images.release.xcconfig"; sourceTree = "<group>"; };
 		D833EF84197FE7CE00E99358 /* filtered-images.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "filtered-images.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +76,7 @@
 				D833EF8A197FE7CE00E99358 /* CoreGraphics.framework in Frameworks */,
 				D833EF8C197FE7CE00E99358 /* UIKit.framework in Frameworks */,
 				D833EF88197FE7CE00E99358 /* Foundation.framework in Frameworks */,
+				F1F506DBF7DADBF9417493D1 /* libPods-filtered-images.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +100,34 @@
 				317B53CE1ADEF73800E82B6E /* UIImage+Filters.m */,
 			);
 			name = "UIImage+Filters";
+			sourceTree = "<group>";
+		};
+		718FFB4B1B586E0000E8EE42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D833EF99197FE7CE00E99358 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		718FFB4C1B586E0500E8EE42 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D833EF96197FE7CE00E99358 /* FISAppDelegate.h */,
+				D833EF97197FE7CE00E99358 /* FISAppDelegate.m */,
+				7172A4EB1B59409F0026E4B7 /* FISApplyFilterOperation.h */,
+				7172A4EC1B59409F0026E4B7 /* FISApplyFilterOperation.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		718FFB4D1B586E0900E8EE42 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D833EF9C197FE7CE00E99358 /* FISViewController.h */,
+				D833EF9D197FE7CE00E99358 /* FISViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		D833EF7B197FE7CE00E99358 = {
@@ -133,12 +166,10 @@
 		D833EF8D197FE7CE00E99358 /* filtered-images */ = {
 			isa = PBXGroup;
 			children = (
-				D833EF96197FE7CE00E99358 /* FISAppDelegate.h */,
-				D833EF97197FE7CE00E99358 /* FISAppDelegate.m */,
-				D833EF99197FE7CE00E99358 /* Main.storyboard */,
+				718FFB4D1B586E0900E8EE42 /* Controllers */,
+				718FFB4C1B586E0500E8EE42 /* Models */,
+				718FFB4B1B586E0000E8EE42 /* Views */,
 				D833EFBC197FE82800E99358 /* Mickey.jpg */,
-				D833EF9C197FE7CE00E99358 /* FISViewController.h */,
-				D833EF9D197FE7CE00E99358 /* FISViewController.m */,
 				D833EF9F197FE7CE00E99358 /* Images.xcassets */,
 				317B53D01ADEF73C00E82B6E /* UIImage+Filters */,
 				D833EF8E197FE7CE00E99358 /* Supporting Files */,
@@ -319,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D833EF9E197FE7CE00E99358 /* FISViewController.m in Sources */,
+				7172A4ED1B59409F0026E4B7 /* FISApplyFilterOperation.m in Sources */,
 				317B53CF1ADEF73800E82B6E /* UIImage+Filters.m in Sources */,
 				D833EF94197FE7CE00E99358 /* main.m in Sources */,
 				D833EF98197FE7CE00E99358 /* FISAppDelegate.m in Sources */,
